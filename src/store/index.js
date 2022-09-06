@@ -5,7 +5,7 @@ export default createStore({
     count: 0,
     memos: [],
   },
-  getter: {
+  getters: {
     getCount: (state) => {
       return state.memos.length;
     },
