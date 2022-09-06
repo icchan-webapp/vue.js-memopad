@@ -13,10 +13,13 @@
 <script>
   export default {
     name: 'MemoForm',
+    props: [
+      'memo'
+    ],
     data() {
       return {
-        title: '',
-        content: ''
+        title: this.memo.title,
+        content: this.memo.content
       }
     },
     methods : {
